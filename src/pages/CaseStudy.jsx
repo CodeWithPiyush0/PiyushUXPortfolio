@@ -6,6 +6,26 @@ const CaseStudy = () => {
 
   // This would normally come from an API or database
   const caseStudies = {
+    'exaltride': {
+      title: 'ExaltRide',
+      subtitle: 'Vendor & Admin Ecosystem',
+      year: '2026',
+      role: 'UI/UX Designer',
+      duration: 'Ongoing',
+      platform: 'Web Dashboard',
+      tools: ['Figma', 'Auto Layout', 'Design Systems'],
+      color: 'cyan',
+      overview: 'ExaltRide is an e-commerce platform for car accessories. While the main storefront was pre-designed, I was tasked with building the "brains" of the operation—the Vendor and Admin panels.',
+      problem: 'The platform needed a robust way for vendors to manage inventory and for admins to oversee transactions without a steep learning curve.',
+      solution: 'Designed a comprehensive dashboard system with real-time analytics, order tracking, and inventory management modules using a clean, scalable design system.',
+      results: [
+        'Designed complete Vendor onboarding and management flow',
+        'Created high-fidelity Admin Panel for platform oversight',
+        'Standardized dashboard components for future scalability',
+        'Optimized data-heavy tables for better readability'
+      ],
+      tags: ['E-commerce', 'Dashboard', 'B2B'],
+    },
     'onebanc': {
       title: 'OneBanc',
       subtitle: 'Premium Wealth Management Experience',

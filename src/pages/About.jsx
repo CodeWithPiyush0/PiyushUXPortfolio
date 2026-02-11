@@ -9,13 +9,34 @@ const About = () => {
     { category: 'Development', items: ['HTML/CSS', 'JavaScript', 'React', 'Tailwind', 'MERN Stack'] },
   ];
 
+  const education = [
+    {
+      degree: 'Master of Computer Applications (MCA)',
+      institution: 'Chandigarh University',
+      period: '2023 - 2025',
+      grade: '7.1 CGPA'
+    },
+    {
+      degree: 'Bachelor of Computer Applications (BCA)',
+      institution: 'BRABU (Babasaheb Bhimrao Ambedkar Bihar University)',
+      period: '2019 - 2023',
+      grade: '80%'
+    }
+  ];
+
   const experience = [
     {
-      role: 'UI/UX Design Projects',
-      company: 'Freelance & Learning',
-      period: '2022 - Present',
-      description: 'Focused on fintech and enterprise software, creating user-centered designs through research and iteration.',
+      role: 'UI/UX Designer (Intern)',
+      company: 'ExaltRide',
+      period: 'Jan 2026 - Present',
+      description: 'Leading the end-to-end design of the Vendor and Admin panels for a newly launched e-commerce platform specializing in car accessories. Focused on streamlining complex dashboard workflows for platform management.'
     },
+    {
+      role: 'Software Design Engineer - UX/UI',
+      company: 'CeroED Technologies Pvt Ltd',
+      period: 'Aug 2025 - Oct 2025',
+      description: 'Responsible for designing web applications using Figma, maintaining the company website (PHP/WordPress), and creating high-impact marketing and product videos using AI tools.'
+    }
   ];
 
   return (
@@ -50,15 +71,11 @@ const About = () => {
             className="space-y-6"
           >
             <p className="font-mono text-xl leading-relaxed text-smoke">
-              I'm a UI/UX designer passionate about creating intuitive digital experiences 
-              that solve real problems. My approach combines user research, iterative design, 
-              and attention to detail.
+              I am a Software Design Engineer specializing in UI/UX, bridging the gap between complex technical requirements and user-centric design.
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">
-              I specialize in fintech and enterprise software, where complex workflows need 
-              to be simplified without losing functionality. My designs balance business goals 
-              with user needs, creating experiences that are both beautiful and practical.
+              With professional experience in fintech and e-commerce ecosystems, I focus on building scalable design systems and intuitive admin environments that simplify high-density data[cite: 9].
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">
@@ -84,7 +101,7 @@ const About = () => {
             transition={{ delay: 0.3 }}
             className="relative"
           >
-            <div className="aspect-square bg-gradient-to-br from-emerald-400/20 to-cyan-400/20 relative overflow-hidden">
+            <div className="aspect-square bg-linear-to-br from-emerald-400/20 to-cyan-400/20 relative overflow-hidden">
               {/* Geometric pattern overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 border-4 border-emerald-400/30 rotate-45" />
@@ -104,6 +121,52 @@ const About = () => {
             <div className="absolute -top-6 -left-6 w-24 h-24 border-2 border-emerald-400/30 -z-10" />
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity:0, y: 30 }}
+          whileInView={{ opacity:1, y: 0 }}
+          viewport={{ once: true }}
+          className='mb-32'
+        >
+          <h2 className='font-display text-4xl md:text-5xl font-bold mb-12'>Experience</h2>
+          <div className='space-y-8'>
+            {experience.map((job, index) => (
+              <motion.div
+                key={index}
+                className='glass p-8 border border-zinc/50 border-l-4 border-l-emerald-400'
+              >
+                <div className='flex flex-col md:flex-row md:items-center md:justify-between mb-4'>
+                  <div>
+                    <h3 className='font-display text-2xl font-bold mb-1'>{job.company}</h3>
+                  </div>
+                  <span className='font-mono text-sm text-ash mt-2 md:mt-0'>
+                    {job.period}
+                  </span>
+                </div>
+                <p className='font-mono text-ash leading-relaxed'>{job.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity:0, y: 30 }}
+          whileInView={{ opacity:1, y: 0 }}
+          viewport={{ once: true }}
+          className='mb-32'
+        >
+          <h2 className='font-display text-4xl md:text-5xl font-bold mb-12'>Education</h2>
+          <div className='grid md:grid-cols-2 gap-8'>
+            {education.map((edu, index) => (
+              <div key={index} className='glass p-8 border border-zinc/50'>
+                <span className='font-mono text-emerald-400 text-sm'>{edu.period}</span>
+                <h3 className='font-display text-2xl font-bold mt-2'>{edu.degree}</h3>
+                <p className='font-mono text-smoke'>{edu.institution}</p>
+                <p className='font-mono text-ash text-sm mt-4'>Result: {edu.grade}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Skills Section */}
         <motion.div
@@ -142,48 +205,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Experience Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-32"
-        >
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-12">
-            Experience
-          </h2>
-
-          <div className="space-y-8">
-            {experience.map((job, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="glass p-8 border border-zinc/50 border-l-4 border-l-emerald-400"
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 className="font-display text-2xl font-bold mb-1">
-                      {job.role}
-                    </h3>
-                    <p className="font-mono text-emerald-400">
-                      {job.company}
-                    </p>
-                  </div>
-                  <span className="font-mono text-sm text-ash mt-2 md:mt-0">
-                    {job.period}
-                  </span>
-                </div>
-                
-                <p className="font-mono text-ash leading-relaxed">
-                  {job.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* Process Section */}
         <motion.div

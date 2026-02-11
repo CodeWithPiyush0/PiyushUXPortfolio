@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 const Work = () => {
   const projects = [
     {
+      title: 'ExaltRide',
+      description: 'Designing high-complexity Vendor and Admin panels for a specialized car accessories e-commerce platform.',
+      tags: ['E-commerce', 'Dashboard', 'B2B', 'UX Research'],
+      year: '2026',
+      color: 'cyan',
+      slug: 'exaltride',
+      featured: true,
+    },
+    {
       title: 'OneBanc',
       description: 'Premium wealth management platform for high-net-worth individuals',
       tags: ['Fintech', 'Web', 'Mobile', 'Design System'],
