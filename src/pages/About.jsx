@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import profile from '../assets/image2.png'; // Placeholder image, replace with actual photo
 
 const About = () => {
   const skills = [
@@ -110,7 +109,7 @@ const About = () => {
               {/* Replace with actual photo */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <img 
-                  src={profile} 
+                  src="/image2.png" 
                   alt="Piyush - UI/UX Designer" 
                   className="w-full h-full object-cover object-[center_20%] rounded-2xl transition-transform duration-700 group-hover:scale-[1.03]" 
                 />
