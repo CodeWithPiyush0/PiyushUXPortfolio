@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import profile from '../assets/image2.png'; // Placeholder image, replace with actual photo
 
 const About = () => {
   const skills = [
     { category: 'Research', items: ['User Interviews', 'Personas', 'Competitive Analysis', 'Usability Testing'] },
-    { category: 'Design', items: ['Wireframing', 'Prototyping', 'UI Design', 'Design Systems', 'Interaction Design'] },
-    { category: 'Tools', items: ['Figma', 'Adobe XD', 'FigJam', 'Illustrator', 'Photoshop'] },
-    { category: 'Development', items: ['HTML/CSS', 'JavaScript', 'React', 'Tailwind', 'MERN Stack'] },
+    { category: 'Design', items: ['Wireframing', 'Prototyping', 'UI Design', 'Design Systems', 'Dashboard Design', 'Interaction Design'] },
+    { category: 'Tools', items: ['Figma', 'FigJam', 'AI Video Tools'] },
+    { category: 'Development', items: ['HTML/CSS', 'JavaScript', 'React', 'Tailwind CSS', 'MERN Stack', 'PHP'] },
   ];
 
   const education = [
@@ -20,7 +21,7 @@ const About = () => {
       degree: 'Bachelor of Computer Applications (BCA)',
       institution: 'BRABU (Babasaheb Bhimrao Ambedkar Bihar University)',
       period: '2019 - 2023',
-      grade: '80%'
+      grade: '80% Marks'
     }
   ];
 
@@ -62,7 +63,7 @@ const About = () => {
           </h1>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 mb-32">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 mb-32">
           {/* Left Column - Story */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -71,17 +72,15 @@ const About = () => {
             className="space-y-6"
           >
             <p className="font-mono text-xl leading-relaxed text-smoke">
-              I am a Software Design Engineer specializing in UI/UX, bridging the gap between complex technical requirements and user-centric design.
+              I am a Software Design Engineer specializing in UI/UX, focused on bridging complex technical requirements with intuitive user experiences.
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">
-              With professional experience in fintech and e-commerce ecosystems, I focus on building scalable design systems and intuitive admin environments that simplify high-density data[cite: 9].
+              With professional experience across fintech and e-commerce ecosystems, I build scalable design systems and streamlined admin environments that simplify high-density data workflows.
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">
-              When I'm not designing, you'll find me exploring new design trends, learning 
-              web development, or working on personal projects that push my creative boundaries. 
-              I believe in continuous learning and staying curious.
+              When I'm not designing, I explore emerging design trends, strengthen my frontend skills, and work on personal projects that push my creative boundaries. I believe in continuous learning and staying curious.
             </p>
 
             <div className="pt-8">
@@ -101,18 +100,20 @@ const About = () => {
             transition={{ delay: 0.3 }}
             className="relative"
           >
-            <div className="aspect-square bg-linear-to-br from-emerald-400/20 to-cyan-400/20 relative overflow-hidden">
+            <div className="aspect-square bg-linear-to-br from-emerald-400/20 to-cyan-400/20 relative overflow-hidden rounded-2xl p-4 md:p-6">
               {/* Geometric pattern overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 border-4 border-emerald-400/30 rotate-45" />
-                <div className="absolute w-48 h-48 border-4 border-cyan-400/30 -rotate-12" />
+                <div className="w-64 h-64 border-4 border-emerald-400/10 rotate-45" />
+                <div className="absolute w-48 h-48 border-4 border-cyan-400/10 -rotate-12" />
               </div>
               
               {/* Replace with actual photo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-mono text-sm text-ash">
-                  [Your Photo Here]
-                </span>
+                <img 
+                  src={profile} 
+                  alt="Piyush - UI/UX Designer" 
+                  className="w-full h-full object-cover object-[center_20%] rounded-2xl transition-transform duration-700 group-hover:scale-[1.03]" 
+                />
               </div>
             </div>
 
@@ -137,7 +138,8 @@ const About = () => {
               >
                 <div className='flex flex-col md:flex-row md:items-center md:justify-between mb-4'>
                   <div>
-                    <h3 className='font-display text-2xl font-bold mb-1'>{job.company}</h3>
+                    <h3 className='font-display text-2xl font-bold mb-1'>{job.role}</h3>
+                    <p className='font-mono text-emerald-400 text-sm mb-1'>{job.company}</p>
                   </div>
                   <span className='font-mono text-sm text-ash mt-2 md:mt-0'>
                     {job.period}

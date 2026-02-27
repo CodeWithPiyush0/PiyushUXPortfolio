@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,13 +15,36 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     
-    // Simulate form submission - Replace with actual API call
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        publicKey
+      );
+
       setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+
       setTimeout(() => setStatus(''), 3000);
-    }, 1500);
+    } catch (error) {
+      console.error('Email sending error:', error);
+      setStatus('error');
+    }
   };
 
   const handleChange = (e) => {
@@ -31,10 +55,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile', icon: 'linkedin' },
-    { name: 'Figma', url: 'https://figma.com/@piyush0', icon: 'figma' },
-    { name: 'GitHub', url: 'https://github.com/yourprofile', icon: 'github' },
-    { name: 'Twitter', url: 'https://twitter.com/yourprofile', icon: 'twitter' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/piyush-kumar-9b9618289', icon: 'linkedin' },
+    { name: 'Figma', url: 'https://www.figma.com/@piyush0', icon: 'figma' },
+    { name: 'GitHub', url: 'https://github.com/CodeWithPiyush0', icon: 'github' },
   ];
 
   return (
@@ -178,6 +201,12 @@ const Contact = () => {
                   Thanks! I'll get back to you soon.
                 </motion.p>
               )}
+
+              {status === 'error' && (
+                <p className='font-mono text-sm text-red-400 text-center'>
+                  Something went wrong. Please try again.
+                </p>
+              )}
             </form>
           </motion.div>
 
@@ -196,7 +225,7 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:piyush0codes@gmail.com"
                   className="flex items-center gap-3 group"
                 >
                   <div className="w-10 h-10 border border-emerald-400 flex items-center justify-center group-hover:bg-emerald-400 transition-all">
@@ -207,13 +236,13 @@ const Contact = () => {
                   <div>
                     <div className="font-mono text-xs text-ash">Email</div>
                     <div className="font-mono text-sm text-smoke group-hover:text-emerald-400 transition-colors">
-                      your.email@example.com
+                      piyush0codes@gmail.com
                     </div>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+917764822206"
                   className="flex items-center gap-3 group"
                 >
                   <div className="w-10 h-10 border border-emerald-400 flex items-center justify-center group-hover:bg-emerald-400 transition-all">
@@ -224,7 +253,7 @@ const Contact = () => {
                   <div>
                     <div className="font-mono text-xs text-ash">Phone</div>
                     <div className="font-mono text-sm text-smoke group-hover:text-emerald-400 transition-colors">
-                      +91 XXXX XXXX XX
+                      +91 7764822206
                     </div>
                   </div>
                 </a>
@@ -239,7 +268,7 @@ const Contact = () => {
                   <div>
                     <div className="font-mono text-xs text-ash">Location</div>
                     <div className="font-mono text-sm text-smoke">
-                      Patna, Bihar, India
+                      Muzaffarpur, Bihar, India
                     </div>
                   </div>
                 </div>

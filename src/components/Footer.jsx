@@ -14,17 +14,20 @@ const Footer = () => {
       { name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile' },
       { name: 'Figma', url: 'https://figma.com/@piyush0' },
       { name: 'GitHub', url: 'https://github.com/yourprofile' },
-      { name: 'Twitter', url: 'https://twitter.com/yourprofile' },
     ],
   };
 
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
-    <footer className="relative border-t border-zinc/50 mt-32">
+    <footer className="relative border-t border-zinc/50 mt-32" role='contentinfo' >
       <div className="container-custom px-6 md:px-12 py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div>
-            <Link to="/" className="group inline-block mb-6">
+            <Link to="/" className="group inline-block mb-6" aria-label='Go to homepage'>
               <div className="flex items-center gap-3">
                 <div className="relative w-10 h-10">
                   <motion.div
@@ -57,7 +60,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation */}
-          <div>
+          <nav aria-label='Footer navigation'>
             <h3 className="font-mono text-emerald-400 font-semibold mb-4 text-sm tracking-wider">
               NAVIGATION
             </h3>
@@ -73,7 +76,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Social */}
           <div>
@@ -87,6 +90,7 @@ const Footer = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Open ${link.name} profile`}
                     className="font-mono text-sm text-ash hover:text-emerald-400 transition-colors inline-flex items-center gap-2 group"
                   >
                     {link.name}
@@ -106,19 +110,19 @@ const Footer = () => {
             </h3>
             <div className="space-y-3">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:piyush0codes@gmail.com"
                 className="font-mono text-sm text-ash hover:text-emerald-400 transition-colors block"
               >
-                your.email@example.com
+                piyush0codes@gmail.com
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+917764822206"
                 className="font-mono text-sm text-ash hover:text-emerald-400 transition-colors block"
               >
-                +91 XXXX XXXX XX
+                +91 7764822206
               </a>
               <p className="font-mono text-sm text-ash">
-                Patna, Bihar, India
+                Muzaffarpur, Bihar, India
               </p>
             </div>
           </div>
@@ -154,7 +158,7 @@ const Footer = () => {
       </div>
 
       {/* Decorative gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent opacity-50" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-emerald-400 to-transparent opacity-50" />
     </footer>
   );
 };

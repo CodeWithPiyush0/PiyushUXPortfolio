@@ -48,7 +48,8 @@
 
 @layer base {
   body {
-    @apply bg-coal text-smoke font-mono;
+    @apply bg-coal text-smoke;
+    font-family: var(--font-display);
   }
 }
 
