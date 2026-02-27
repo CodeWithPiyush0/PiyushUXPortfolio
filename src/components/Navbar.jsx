@@ -116,7 +116,7 @@ const Navbar = () => {
             
             {/* CTA Button */}
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1HNSnnMeB2uzJY990D4dA6777dwAtHW_e/view?usp=sharing"
               download
               className="ml-4 px-5 py-2.5 bg-emerald-400 text-coal font-mono text-sm font-semibold hover:bg-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-400/50 relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             >
