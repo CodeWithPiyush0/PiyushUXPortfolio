@@ -109,7 +109,7 @@ const About = () => {
               {/* Replace with actual photo */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <img 
-                  src="/image2.png" 
+                  src="/image3.png" 
                   alt="Piyush - UI/UX Designer" 
                   className="w-full h-full object-cover object-[center_20%] rounded-2xl transition-transform duration-700 group-hover:scale-[1.03]" 
                 />
