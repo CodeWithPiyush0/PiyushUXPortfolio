@@ -11,9 +11,9 @@ const Footer = () => {
       { name: 'Contact', path: '/contact' },
     ],
     social: [
-      { name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile' },
+      { name: 'LinkedIn', url: 'https://linkedin.com/in/piyush-kumar-9b9618289' },
       { name: 'Figma', url: 'https://figma.com/@piyush0' },
-      { name: 'GitHub', url: 'https://github.com/yourprofile' },
+      { name: 'GitHub', url: 'https://github.com/CodeWithPiyush0' },
     ],
   };
 
