@@ -7,6 +7,8 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const mobilemenuRef = useRef();
+  const resumeUrl =
+    "https://drive.google.com/file/d/1HNSnnMeB2uzJY990D4dA6777dwAtHW_e/view?usp=sharing";
 
   useEffect(() => {
     let ticking = false;
@@ -116,8 +118,9 @@ const Navbar = () => {
             
             {/* CTA Button */}
             <a
-              href="https://drive.google.com/file/d/1HNSnnMeB2uzJY990D4dA6777dwAtHW_e/view?usp=sharing"
-              download
+              href={resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-4 px-5 py-2.5 bg-emerald-400 text-coal font-mono text-sm font-semibold hover:bg-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-400/50 relative overflow-hidden group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             >
               <span className="relative z-10">RESUME</span>
@@ -180,8 +183,9 @@ const Navbar = () => {
               ))}
               
               <motion.a
-                href="/resume.pdf"
-                download
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navItems.length * 0.08 }}
