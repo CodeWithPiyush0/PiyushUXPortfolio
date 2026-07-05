@@ -20,23 +20,23 @@ const CaseStudy = () => {
       title: "Direction Educare",
       subtitle: "Game-Based Learning for K–12",
       year: "2026",
-      role: "UI/UX Designer",
+      role: "UI/UX Designer & Developer",
       duration: "Apr 2026 - Present",
-      platform: "Interactive Learning Games",
+      platform: "Web Games (HTML, CSS, JavaScript)",
       tools: [
         "Figma",
         "Game UI",
         "Interaction Design",
-        "Design Systems",
-        "Developer Handoff",
+        "HTML / CSS",
+        "JavaScript",
       ],
       color: "emerald",
       overview:
-        "At Direction Educare (Dreamplex Innovations), I design interactive educational games and learning experiences for K–12 learners. Note: the actual games and assets are protected under an NDA, so this case study describes my role, process, and outcomes at a high level rather than showing final screens.",
+        "At Direction Educare (Dreamplex Innovations), I own the full lifecycle of interactive educational games for K–12 learners — from designing them in Figma to developing them in vanilla HTML, CSS, and JavaScript. Note: the actual games and assets are protected under an NDA, so this case study describes my role, process, and outcomes at a high level rather than showing final screens.",
       problem:
-        "Traditional learning content struggles to hold the attention of young learners. Each module needs to teach a real curriculum concept while feeling like play — which means game mechanics, difficulty pacing, and feedback systems have to be designed around how children actually learn.",
+        "Traditional learning content struggles to hold the attention of young learners. Each module needs to teach a real curriculum concept while feeling like play — which means game mechanics, difficulty pacing, and feedback systems have to be designed around how children actually learn, then built to run smoothly in the browser.",
       solution:
-        "I design each experience learning-first: translating curriculum concepts into game mechanics, then building user flows, wireframes, and high-fidelity UI in Figma. Reward loops and feedback systems keep learners engaged, while reusable components and developer-ready specs keep the design-to-build pipeline fast within cross-functional POD teams.",
+        "I work learning-first and end-to-end: translating curriculum concepts into game mechanics, designing user flows, wireframes, and high-fidelity UI in Figma, then developing the games myself in vanilla HTML, CSS, and JavaScript (the stack chosen for lightweight, dependency-free builds). Owning both sides removes the design-to-dev gap entirely — what I design is exactly what ships.",
       process: [
         {
           title: "Learning-First Design",
@@ -47,17 +47,17 @@ const CaseStudy = () => {
           desc: "Designing high-fidelity game visuals, storybook assets, reward loops, and feedback systems that improve usability and engagement.",
         },
         {
-          title: "Developer Handoff",
-          desc: "Building reusable components and developer-ready designs, iterating with cross-functional POD teams through feedback cycles.",
+          title: "Build & Ship",
+          desc: "Developing the games in vanilla HTML, CSS, and JavaScript — turning my own designs into playable, production-ready builds within cross-functional POD teams.",
         },
       ],
       results: [
         "Designed 2+ educational games and 6+ interactive learning modules for K–12 learners",
+        "Developed the games end-to-end in vanilla HTML, CSS, and JavaScript",
         "Created game mechanics, interactions, and feedback systems that improve learner engagement",
         "Produced storybook assets, game visuals, and interactive UI for educational content",
-        "Delivered developer-ready designs in collaboration with cross-functional POD teams",
       ],
-      tags: ["Professional", "EdTech", "Game Design", "Under NDA"],
+      tags: ["Professional", "EdTech", "Game Design", "Design + Dev", "Under NDA"],
     },
     exaltride: {
       title: "ExaltRide",

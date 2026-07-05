@@ -32,7 +32,7 @@ const Home = () => {
       subtitle: "Game-Based Learning for K–12",
       color: "emerald",
       year: "2026",
-      tags: ["EdTech", "Game Design", "Under NDA"],
+      tags: ["EdTech", "Game Design", "Design + Dev"],
       slug: "direction-educare",
     },
     {
@@ -146,12 +146,12 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               className="font-mono text-base md:text-lg text-ash max-w-xl md:max-w-2xl mb-10 md:mb-12 leading-relaxed"
             >
-              Currently designing{" "}
+              Currently designing and building{" "}
               <span className="text-emerald-400">educational games</span> and
               interactive learning experiences for K–12 learners at{" "}
-              <span className="text-amber-400">Direction Educare</span>, with a
-              focus on game mechanics, design systems and user-centered product
-              thinking.
+              <span className="text-amber-400">Direction Educare</span> — from
+              game mechanics in Figma to hand-coded HTML, CSS & JavaScript
+              builds.
             </motion.p>
 
             {/* CTAs */}

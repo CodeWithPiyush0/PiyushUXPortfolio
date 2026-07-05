@@ -29,7 +29,7 @@ const About = () => {
       role: 'UI/UX Designer',
       company: 'Direction Educare (Dreamplex Innovations Pvt. Ltd.)',
       period: 'Apr 2026 - Present',
-      description: 'Designing interactive educational games and learning experiences for K–12 learners. Creating user flows, wireframes, high-fidelity UI, and developer-ready designs, while shaping game mechanics, interactions, and feedback systems that improve usability and learner engagement.'
+      description: 'Designing and developing interactive educational games for K–12 learners — from user flows, wireframes, and high-fidelity UI in Figma to production-ready builds in vanilla HTML, CSS, and JavaScript. Shaping game mechanics, interactions, and feedback systems that improve usability and learner engagement.'
     },
     {
       role: 'UI/UX Designer (Intern)',
@@ -77,7 +77,7 @@ const About = () => {
             className="space-y-6"
           >
             <p className="font-mono text-xl leading-relaxed text-smoke">
-              I am a UI/UX Designer currently crafting educational games and interactive learning experiences for K–12 learners at Direction Educare.
+              I am a UI/UX Designer who also builds what I design — currently crafting educational games and interactive learning experiences for K–12 learners at Direction Educare, from Figma concepts to hand-coded HTML, CSS, and JavaScript builds.
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">

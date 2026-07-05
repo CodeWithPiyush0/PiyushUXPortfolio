@@ -10,8 +10,8 @@ const Work = () => {
     {
       title: "Direction Educare",
       description:
-        "Currently designing educational games and interactive learning modules for K–12 learners — game mechanics, feedback systems, and developer-ready UI. Game assets are under NDA; this case study covers my role and process.",
-      tags: ["Professional", "EdTech", "Game Design", "Under NDA"],
+        "Currently designing and developing educational games and interactive learning modules for K–12 learners — from game mechanics and feedback systems in Figma to hand-coded builds in vanilla HTML, CSS, and JavaScript. Game assets are under NDA; this case study covers my role and process.",
+      tags: ["Professional", "EdTech", "Game Design", "Design + Dev", "Under NDA"],
       year: "2026",
       color: "emerald",
       slug: "direction-educare",
