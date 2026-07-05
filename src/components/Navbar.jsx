@@ -7,8 +7,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const mobilemenuRef = useRef();
-  const resumeUrl =
-    "https://drive.google.com/file/d/1HNSnnMeB2uzJY990D4dA6777dwAtHW_e/view?usp=sharing";
+  const resumeUrl = "/Piyush_Kumar_UX_Resume.pdf";
 
   useEffect(() => {
     let ticking = false;

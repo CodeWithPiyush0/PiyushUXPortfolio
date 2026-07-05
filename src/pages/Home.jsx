@@ -28,6 +28,14 @@ const Home = () => {
 
   const projects = [
     {
+      title: "Direction Educare",
+      subtitle: "Game-Based Learning for K–12",
+      color: "emerald",
+      year: "2026",
+      tags: ["EdTech", "Game Design", "Under NDA"],
+      slug: "direction-educare",
+    },
+    {
       title: "ExaltRide",
       subtitle: "B2B Ecosystem & Mobile-First Redesign",
       color: "cyan",
@@ -36,12 +44,12 @@ const Home = () => {
       slug: "exaltride",
     },
     {
-      title: "Frenley",
-      subtitle: "Social Connection & Premium Ecosystem",
+      title: "Spark",
+      subtitle: "Premium Dating Experience",
       color: "orange",
       year: "2026",
       tags: ["Mobile", "Social", "Dating"],
-      slug: "frenley",
+      slug: "spark",
     },
     {
       title: "FinTrack",
@@ -138,11 +146,12 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               className="font-mono text-base md:text-lg text-ash max-w-xl md:max-w-2xl mb-10 md:mb-12 leading-relaxed"
             >
-              Currently designing scalable{" "}
-              <span className="text-emerald-400">B2B ecosystems</span> and
-              high-density dashboard experiences at{" "}
-              <span className="text-amber-400">ExaltRide</span>, with a focus on
-              mobile-first product thingking and design systems.
+              Currently designing{" "}
+              <span className="text-emerald-400">educational games</span> and
+              interactive learning experiences for K–12 learners at{" "}
+              <span className="text-amber-400">Direction Educare</span>, with a
+              focus on game mechanics, design systems and user-centered product
+              thinking.
             </motion.p>
 
             {/* CTAs */}
@@ -331,6 +340,8 @@ const Home = () => {
                 "Wireframing",
                 "Prototyping",
                 "UI Design",
+                "Game UI",
+                "Interaction Design",
                 "Design Systems",
                 "Figma",
                 "React",

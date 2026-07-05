@@ -16,12 +16,55 @@ const CaseStudy = () => {
 
   // This would normally come from an API or database
   const caseStudies = {
+    "direction-educare": {
+      title: "Direction Educare",
+      subtitle: "Game-Based Learning for K–12",
+      year: "2026",
+      role: "UI/UX Designer",
+      duration: "Apr 2026 - Present",
+      platform: "Interactive Learning Games",
+      tools: [
+        "Figma",
+        "Game UI",
+        "Interaction Design",
+        "Design Systems",
+        "Developer Handoff",
+      ],
+      color: "emerald",
+      overview:
+        "At Direction Educare (Dreamplex Innovations), I design interactive educational games and learning experiences for K–12 learners. Note: the actual games and assets are protected under an NDA, so this case study describes my role, process, and outcomes at a high level rather than showing final screens.",
+      problem:
+        "Traditional learning content struggles to hold the attention of young learners. Each module needs to teach a real curriculum concept while feeling like play — which means game mechanics, difficulty pacing, and feedback systems have to be designed around how children actually learn.",
+      solution:
+        "I design each experience learning-first: translating curriculum concepts into game mechanics, then building user flows, wireframes, and high-fidelity UI in Figma. Reward loops and feedback systems keep learners engaged, while reusable components and developer-ready specs keep the design-to-build pipeline fast within cross-functional POD teams.",
+      process: [
+        {
+          title: "Learning-First Design",
+          desc: "Translating curriculum concepts into game mechanics, user flows, and interaction models suited to young learners.",
+        },
+        {
+          title: "Game UI & Feedback Systems",
+          desc: "Designing high-fidelity game visuals, storybook assets, reward loops, and feedback systems that improve usability and engagement.",
+        },
+        {
+          title: "Developer Handoff",
+          desc: "Building reusable components and developer-ready designs, iterating with cross-functional POD teams through feedback cycles.",
+        },
+      ],
+      results: [
+        "Designed 2+ educational games and 6+ interactive learning modules for K–12 learners",
+        "Created game mechanics, interactions, and feedback systems that improve learner engagement",
+        "Produced storybook assets, game visuals, and interactive UI for educational content",
+        "Delivered developer-ready designs in collaboration with cross-functional POD teams",
+      ],
+      tags: ["Professional", "EdTech", "Game Design", "Under NDA"],
+    },
     exaltride: {
       title: "ExaltRide",
       subtitle: "E-commerce Ecosystem & Mobile-First Redesign",
       year: "2026",
-      role: "UI/UX Designer",
-      duration: "Ongoing",
+      role: "UI/UX Designer (Intern)",
+      duration: "Jan 2026 - Mar 2026",
       platform: "Web, Vendor & Admin Panels",
       tools: [
         "Figma",
@@ -36,7 +79,7 @@ const CaseStudy = () => {
       problem:
         'The startup needed a "brains of the operation" (Dashboard) to manage complex inventory while simultaneously requiring a consumer site that felt like a native iOS/Android app without the native development cost.',
       solution:
-        "I adopted a modular design approach. First, I built the B2B infrastructure using a scalable Design System. Now, in Stage 3, I am applying PWA (Progressive Web App) principles to the storefront—using bottom-tab navigation and gesture-based UI to simulate a native app feel in the browser.",
+        "I adopted a modular design approach. First, I built the B2B infrastructure using a scalable Design System. In the final stage, I applied PWA (Progressive Web App) principles to the storefront—using bottom-tab navigation and gesture-based UI to simulate a native app feel in the browser.",
       phases: [
         {
           title: "Admin Logic",
@@ -52,16 +95,16 @@ const CaseStudy = () => {
         },
       ],
       results: [
-        "Designed end-to-end Vendor Panel for inventory and order management",
-        "Developed a comprehensive Admin Panel for platform oversight and control",
-        "Leading the Stage 3 total redesign of the consumer website",
-        'Architecting "App-in-Browser" UI patterns (Bottom Tabs, Gesture Navigation) to simulate a native mobile app experience',
+        "Designed UX for 13+ admin modules and 8+ vendor panel features",
+        "Delivered 30+ production-ready screens across Admin, Vendor, and User platforms",
+        "Redesigned the consumer website with a mobile-first approach",
+        'Architected "App-in-Browser" UI patterns (Bottom Tabs, Gesture Navigation) to simulate a native mobile app experience',
       ],
       tags: ["B2B & B2C", "Dashboard Design", "Mobile-First", "E-commerce"],
     },
-    frenley: {
-      title: "Frenley",
-      subtitle: "Social Connection & Premium Ecosystem",
+    spark: {
+      title: "Spark",
+      subtitle: "Premium Dating Experience",
       year: "2026",
       role: "UI/UX Designer",
       duration: "10 Days",
@@ -76,7 +119,7 @@ const CaseStudy = () => {
       overview:
         "Originally started as a recruitment assignment for Eclipticon Pvt. Ltd., I expanded this project into a full product showcase. I designed the core social engagement screens to provide a holistic view of how the premium subscription flow integrates into the daily user journey.",
       problem:
-        'A premium flow is only successful if it feels like a natural extension of the core app. I needed to design a free-to-paid bridge that maintained the "Frenley" brand voice—clean, warm, and trustworthy—across all touchpoints.',
+        'A premium flow is only successful if it feels like a natural extension of the core app. I needed to design a free-to-paid bridge that maintained the "Spark" brand voice—clean, warm, and trustworthy—across all touchpoints.',
       solution:
         'I architected a "Freemium" model where core social features (Swiping, Chatting) are free, while high-value insights (Who Liked You, Profile Boosts) are positioned as premium upgrades. This creates a clear value proposition for the user.',
       project_scope: [

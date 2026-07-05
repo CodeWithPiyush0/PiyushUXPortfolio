@@ -8,23 +8,33 @@ const Work = () => {
 
   const projects = [
     {
+      title: "Direction Educare",
+      description:
+        "Currently designing educational games and interactive learning modules for K–12 learners — game mechanics, feedback systems, and developer-ready UI. Game assets are under NDA; this case study covers my role and process.",
+      tags: ["Professional", "EdTech", "Game Design", "Under NDA"],
+      year: "2026",
+      color: "emerald",
+      slug: "direction-educare",
+      featured: true,
+    },
+    {
       title: "ExaltRide",
       description:
-        "Designing high-complexity Vendor and Admin panels for a specialized car accessories e-commerce platform.",
+        "Designed high-complexity Vendor and Admin panels for a specialized car accessories e-commerce platform.",
       tags: ["Professional", "E-commerce", "Dashboard", "B2B"],
       year: "2026",
       color: "cyan",
       slug: "exaltride",
-      featured: true,
+      featured: false,
     },
     {
-      title: "Frenley",
+      title: "Spark",
       description:
         "Designing a high-conversion subscription flow and core social experience for a modern dating app.",
       tags: ["Dating", "Mobile UI", "Social"],
       year: "2026",
       color: "orange",
-      slug: "frenley",
+      slug: "spark",
       featured: false,
     },
     {
@@ -102,7 +112,7 @@ const Work = () => {
           transition={{ delay: 0.2 }}
           className="flex flex-wrap gap-3 mb-16 pb-8 border-b border-zinc/50"
         >
-          {["All", "Fintech", "E-commerce", "Mobile", "Dashboard"].map(
+          {["All", "EdTech", "Fintech", "E-commerce", "Mobile", "Dashboard"].map(
             (filter) => (
               <button
                 key={filter}

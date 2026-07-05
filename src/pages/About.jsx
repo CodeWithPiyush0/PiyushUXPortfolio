@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const skills = [
-    { category: 'Research', items: ['User Interviews', 'Personas', 'Competitive Analysis', 'Usability Testing'] },
-    { category: 'Design', items: ['Wireframing', 'Prototyping', 'UI Design', 'Design Systems', 'Dashboard Design', 'Interaction Design'] },
-    { category: 'Tools', items: ['Figma', 'FigJam', 'AI Video Tools'] },
-    { category: 'Development', items: ['HTML/CSS', 'JavaScript', 'React', 'Tailwind CSS', 'MERN Stack', 'PHP'] },
+    { category: 'Research', items: ['User Research', 'User Interviews', 'Personas', 'Competitive Analysis', 'Usability Testing'] },
+    { category: 'Design', items: ['Wireframing', 'Prototyping', 'UI Design', 'Design Systems', 'Dashboard Design', 'Interaction Design', 'Accessibility', 'Developer Handoff'] },
+    { category: 'Tools', items: ['Figma', 'FigJam', 'Auto Layout & Variants', 'Git / GitHub', 'AI Video Tools'] },
+    { category: 'Development', items: ['HTML/CSS', 'JavaScript', 'React', 'Tailwind CSS'] },
   ];
 
   const education = [
@@ -14,28 +14,34 @@ const About = () => {
       degree: 'Master of Computer Applications (MCA)',
       institution: 'Chandigarh University',
       period: '2023 - 2025',
-      grade: '7.1 CGPA'
+      grade: '7.2 CGPA'
     },
     {
       degree: 'Bachelor of Computer Applications (BCA)',
-      institution: 'BRABU (Babasaheb Bhimrao Ambedkar Bihar University)',
-      period: '2019 - 2023',
-      grade: '80% Marks'
+      institution: 'Nitishwar College, Muzaffarpur',
+      period: '2019 - 2022',
+      grade: '80.78% Marks'
     }
   ];
 
   const experience = [
     {
+      role: 'UI/UX Designer',
+      company: 'Direction Educare (Dreamplex Innovations Pvt. Ltd.)',
+      period: 'Apr 2026 - Present',
+      description: 'Designing interactive educational games and learning experiences for K–12 learners. Creating user flows, wireframes, high-fidelity UI, and developer-ready designs, while shaping game mechanics, interactions, and feedback systems that improve usability and learner engagement.'
+    },
+    {
       role: 'UI/UX Designer (Intern)',
       company: 'ExaltRide',
-      period: 'Jan 2026 - Present',
-      description: 'Leading the end-to-end design of the Vendor and Admin panels for a newly launched e-commerce platform specializing in car accessories. Focused on streamlining complex dashboard workflows for platform management.'
+      period: 'Jan 2026 - Mar 2026',
+      description: 'Designed UX for 13+ admin modules and 8+ vendor panel features, delivering 30+ production-ready screens across Admin, Vendor, and User platforms. Redesigned the consumer website with a mobile-first approach to enhance navigation and usability.'
     },
     {
       role: 'Software Design Engineer - UX/UI',
       company: 'CeroED Technologies Pvt Ltd',
       period: 'Aug 2025 - Oct 2025',
-      description: 'Responsible for designing web applications using Figma, maintaining the company website (PHP/WordPress), and creating high-impact marketing and product videos using AI tools.'
+      description: 'Designed 10+ multi-screen workflows and built a design system with 30+ reusable components for consistent UI. Collaborated with developers to deliver responsive, production-ready interfaces and created AI-assisted marketing videos for product launches.'
     }
   ];
 
@@ -71,11 +77,11 @@ const About = () => {
             className="space-y-6"
           >
             <p className="font-mono text-xl leading-relaxed text-smoke">
-              I am a Software Design Engineer specializing in UI/UX, focused on bridging complex technical requirements with intuitive user experiences.
+              I am a UI/UX Designer currently crafting educational games and interactive learning experiences for K–12 learners at Direction Educare.
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">
-              With professional experience across fintech and e-commerce ecosystems, I build scalable design systems and streamlined admin environments that simplify high-density data workflows.
+              With professional experience across EdTech, e-commerce, and fintech ecosystems, I build scalable design systems, high-density dashboards, and game-based interactions that turn complex workflows into intuitive experiences.
             </p>
 
             <p className="font-mono text-lg leading-relaxed text-ash">
